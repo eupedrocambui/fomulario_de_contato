@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .input {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+        }
+
+        #imensagem, #submit, #limpar {
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="https://formsubmit.co/pedrocambui06@gmail.com" method="POST">
+            <div class="input">
+                <label for="inome">Nome:</label>
+                <input type="text" name="Nome" id="inome">
+            </div>
+
+            <br>
+
+            <div class="input">
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail">
+            </div>
+
+            <br>
+
+            <textarea name="mensagem" id="imensagem" cols="50" rows="10" placeholder="Digite sua mensagem..."></textarea>
+
+            <br>
+
+            <input id="submit" type="submit" value="Enviar">
+            <input type="reset" value="Limpar" id="Limpar">
+            <input type="hidden" name="_captcha" value="false"> <!-- desabilitar captcha -->
+
+        </form>
+    </main>
+</body>
+</html>
