@@ -27,8 +27,26 @@ h1 {
     font-size: 1.9em;
 }
 
+.gradient { /* degradê dos textos */
+    background-image: linear-gradient(to right, rgb(0, 255, 183), rgb(0, 234, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+.gradient-border {
+    background-image: linear-gradient(to right, white, white),
+    linear-gradient(to right, rgb(0, 255, 183), rgb(0, 234, 255));
+
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: 5px solid transparent;
+    border-radius: 30px;
+}
+
 img {
-    width: 400px
+    width: 400px;
 }
 
 @media screen and (max-width: 555px) { /* resposividade tela pequena */
@@ -49,15 +67,22 @@ img {
     width: 150px;
     height: 40px;
 
-    background-color: rgba(255, 255, 255, 0.682);
+    background-image: linear-gradient(to right, rgb(0, 255, 183), rgb(0, 234, 255));
+
     border-radius: 18px;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.318);
+}
+
+.botao:hover a {
+    color: rgb(0, 0, 0);
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(67, 67, 67);
+    font-weight: 600;
 }
 
 .botao:hover {
