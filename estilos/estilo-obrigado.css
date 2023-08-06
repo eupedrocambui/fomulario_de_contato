@@ -35,7 +35,7 @@ h1 {
     color: black;
 }
 
-.gradient-border {
+.gradient-border { /* borda degradê */
     background-image: linear-gradient(to right, white, white),
     linear-gradient(to right, rgb(0, 255, 183), rgb(0, 234, 255));
 
@@ -45,7 +45,7 @@ h1 {
     border-radius: 30px;
 }
 
-img {
+img { /* imagem golden */
     width: 400px;
 }
 
@@ -59,7 +59,7 @@ img {
     }
 }
 
-.botao {
+.botao { /* botao "pagina principal" */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,16 +75,12 @@ img {
     box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.318);
 }
 
-.botao:hover a {
+.botao:hover a { /* efeito mudanca de cor no texto do botao "pagina principal" */
     color: rgb(0, 0, 0);
 }
 
-a {
+a { /* texto botao "pagina principal" */
     text-decoration: none;
     color: rgb(67, 67, 67);
     font-weight: 600;
-}
-
-.botao:hover {
-    background-color: white;
 }
